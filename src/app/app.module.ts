@@ -20,7 +20,7 @@ import { TableComponent } from './components/table/table.component';
   ],
   imports: [
     BrowserModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule,
     MatGridListModule,
     MatCardModule,
